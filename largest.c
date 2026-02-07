@@ -13,6 +13,8 @@ int main()
         printf("Largest number is %d", b);
     else
         printf("Largest number is %d", c);
-
+    {
+        printf{"/n"}
+    }
     return 0;
 }
