@@ -11,3 +11,16 @@ int main()
     if (n < 0)
     {
         printf("Factorial is not defined for negative numbers");
+    }
+    else
+    {
+        for (i = 1; i <= n; i++)
+        {
+            fact = fact * i;
+        }
+
+        printf("Factorial = %lld", fact);
+    }
+
+    return 0;
+}
