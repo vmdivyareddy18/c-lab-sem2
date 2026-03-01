@@ -4,3 +4,8 @@ void greet()
 {
     printf("Hello, Welcome to C Programming!");
 }
+int main()
+{
+    greet(); // Function Call
+    return 0;
+}
