@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Triage Assistant</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main Card */
+        .container {
+            width: 800px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Header */
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        /* Icons */
+        .icons {
+            margin: 25px 0;
+        }
+
+        .icon-box {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+            border-radius: 15px;
+            background: #eef3f9;
+            line-height: 60px;
+            font-size: 24px;
+        }
+
+        /* Title */
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        /* Example Boxes */
+        .examples {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .example-box {
+            padding: 15px;
+            border-radius: 12px;
+            background: #f4f6f9;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .example-box:hover {
+            background: #dce8f7;
+        }
+
+        /* Input Area */
+        .input-area {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 15px 20px;
+            border-radius: 12px;
+            border: none;
+            background: #3b82f6;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        /* Result */
+        .result {
+            margin-top: 25px;
+            text-align: left;
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 15px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Clinical Triage Assistant</h1>
+            <p>AI-powered symptom analysis – not a substitute for professional medical advice</p>
+        </div>
+
+        <div class="icons">
+            <div class="icon-box">💙</div>
+            <div class="icon-box">⚠️</div>
+            <div class="icon-box">🛡️</div>
+        </div>
+
+        <h2>Describe your symptoms</h2>
+        <p class="subtitle">Get a structured assessment including probable causes and severity level.</p>
+
+        <div class="examples">
+            <div class="example-box" onclick="fillExample('Persistent headache for 3 days with mild fever')">
+                Persistent headache for 3 days with mild fever
+            </div>
+            <div class="example-box" onclick="fillExample('Sharp chest pain when breathing deeply')">
+                Sharp chest pain when breathing deeply
+            </div>
+            <div class="example-box" onclick="fillExample('Recurring stomach cramps after eating')">
+                Recurring stomach cramps after eating
+            </div>
+            <div class="example-box" onclick="fillExample('Numbness and tingling in left arm')">
+                Numbness and tingling in left arm
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="symptoms" placeholder="Describe your symptoms in detail...">
+            <button onclick="analyze()">Analyze</button>
+        </div>
+
+        
+        <div class="result" id="result"></div>
+
+    </div>
+
+    <script>
+        function fillExample(text) {
+            document.getElementById("symptoms").value = text;
+        }
+
+        function analyze() {
+            let input = document.getElementById("symptoms").value.toLowerCase();
+            let resultBox = document.getElementById("result");
+
+            let output = "";
+
+            if (input.includes("fever") && input.includes("headache")) {
+                output = `
+        <h3>🩺 Possible Conditions:</h3>
+        <p>- Viral Fever<br>- Influenza</p>
+
+        <h3>📊 Severity Level:</h3>
+        <p>Moderate</p>
+
+        <h3>🏥 Recommended Action:</h3>
+        <p>Rest, hydration, monitor temperature.</p>
+
+        <h3>⚠️ Disclaimer:</h3>
+        <p>This AI tool provides general health information only. Consult a certified medical professional.</p>
+        `;
+            }
+            else if (input.includes("chest pain")) {
+                output = `
+        <h3>🩺 Possible Conditions:</h3>
+        <p>- Muscle strain<br>- Cardiac-related issue</p>
+
+        <h3>📊 Severity Level:</h3>
+        <p>High</p>
+
+        <h3>🏥 Recommended Action:</h3>
+        <p>Seek immediate medical attention.</p>
+
+        <h3>⚠️ Disclaimer:</h3>
+        <p>This AI tool provides general health information only. Consult a certified medical professional immediately.</p>
+        `;
+            }
+            else {
+                output = `
+        <h3>🩺 Possible Conditions:</h3>
+        <p>Further evaluation required.</p>
+
+        <h3>📊 Severity Level:</h3>
+        <p>Low to Moderate</p>
+
+        <h3>🏥 Recommended Action:</h3>
+        <p>Consult a healthcare provider for accurate diagnosis.</p>
+
+        <h3>⚠️ Disclaimer:</h3>
+        <p>This AI tool provides general health information only. It is not a substitute for professional medical advice.</p>
+        `;
+            }
+
+            resultBox.innerHTML = output;
+            resultBox.style.display = "block";
+        }
+    </script>
+
+</body>
+
+</html>         
