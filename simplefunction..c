@@ -9,3 +9,6 @@ int main()
     greet(); // Function Call
     return 0;
 }
+{
+    printf("Hello, Welcome to C Programming!");
+}
