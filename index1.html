@@ -153,8 +153,14 @@
                 }
 
                 // Demo validation: accept any non-empty credentials
-                msg.textContent = 'Login successful (demo).';
+                msg.textContent = 'Login successful (demo). Redirecting...';
                 msg.classList.add('success');
+
+                // Clear message after a short delay (demo)
+                setTimeout(() => {
+                    msg.textContent = '';
+                    msg.className = '';
+                }, 3000);
 
                 // Real apps: send credentials to the server here
                 // fetch('/login', { method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({username, password}) })
