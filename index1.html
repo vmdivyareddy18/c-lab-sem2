@@ -160,7 +160,7 @@
                 msg.className = '';
 
                 const username = form.username.value.trim();
-                const password = form.password.value;
+                const password = form.password.value.trim();
 
                 if (!username || !password) {
                     msg.textContent = 'Please enter both username and password.';
@@ -169,13 +169,19 @@
                 }
 
                 // Demo validation: accept any non-empty credentials
+                const submitBtn = form.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Processing...';
+
                 msg.textContent = 'Login successful (demo). Redirecting...';
                 msg.classList.add('success');
 
-                // Clear message after a short delay (demo)
+                // Clear message after a short delay (demo) and restore button
                 setTimeout(() => {
                     msg.textContent = '';
                     msg.className = '';
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Sign in securely';
                 }, 1500);
 
                 // Real apps: send credentials to the server here
