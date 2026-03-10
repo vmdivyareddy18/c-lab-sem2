@@ -147,7 +147,12 @@
     </section>
 
     <script>
-        // Demo client-side handler for the login component
+        /*
+         * Demo login script
+         * - Performs minimal client-side validation (non-empty fields)
+         * - Trims inputs, shows a transient success message, and prevents double submits
+         * - Does NOT transmit credentials unless the form action is changed to a real endpoint
+         */
         (function () {
             const form = document.getElementById('loginForm');
             const msg = document.getElementById('loginMessage');
