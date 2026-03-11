@@ -187,6 +187,10 @@
         (function () {
             const form = document.getElementById('loginForm');
             const msg = document.getElementById('loginMessage');
+            const usernameInput = document.getElementById('username');
+
+            // Focus the username input on load to aid keyboard users
+            if (usernameInput) usernameInput.focus();
 
             if (!form) return;
 
