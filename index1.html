@@ -7,9 +7,15 @@
     <meta name="description" content="A small accessible login component demo built with HTML, CSS and JavaScript.">
     <title>Login demo</title>
     <!-- Tiny inline SVG favicon -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230066cc'/%3E%3Ctext x='50%' y='54%' font-size='16' fill='%23fff' text-anchor='middle' font-family='Arial' dy='0.35em'%3EL%3C/text%3E%3C/svg%3E">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230066cc'/%3E%3Ctext x='50%' y='54%' font-size='16' fill='%23fff' text-anchor='middle' font-family='Arial' dy='0.35em'%3EL%3C/text%3E%3C/svg%3E">
     <style>
-        :root { --primary: #0066cc; --primary-dark: #005bb5; --muted:#666; }
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #005bb5;
+            --muted: #666;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -78,7 +84,9 @@
             font-weight: 600;
         }
 
-    .login-container button:hover { background: var(--primary-dark); }
+        .login-container button:hover {
+            background: var(--primary-dark);
+        }
 
         .login-container .form-row {
             display: flex;
@@ -93,7 +101,10 @@
             color: var(--primary);
             text-decoration: none;
         }
-    .login-container .forgot:hover { color: #004a99; }
+
+        .login-container .forgot:hover {
+            color: #004a99;
+        }
 
         #loginMessage {
             margin-top: 12px;
@@ -107,32 +118,45 @@
         #loginMessage.error {
             color: red;
         }
-    /* Screen-reader-only utility */
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+        /* Screen-reader-only utility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
     </style>
 </head>
 
 <body>
     <h1>Welcome to the Login Demo</h1>
     <p>This is a simple HTML document.</p>
-    <p style="color:#555;">This page demonstrates a small, accessible login component built with plain HTML, CSS and JavaScript.</p>
+    <p style="color:#555;">This page demonstrates a small, accessible login component built with plain HTML, CSS and
+        JavaScript.</p>
     <h3>Subheading</h3>
     <p>This is a paragraph under the subheading.</p>
     <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Visit Example.com (external)</a>
 
     <!-- Login component -->
     <section class="login-container" aria-labelledby="loginTitle">
-    <h2 id="loginTitle">Sign in to your account <span class="sr-only">(use keyboard to navigate, all fields required)</span></h2>
-        <p id="loginHelper" style="margin:6px 0 12px 0;color:#555;font-size:0.95rem;">Use your username or email to sign in. This demo runs client-side validation and does not
+        <h2 id="loginTitle">Sign in to your account <span class="sr-only">(use keyboard to navigate, all fields
+                required)</span></h2>
+        <p id="loginHelper" style="margin:6px 0 12px 0;color:#555;font-size:0.95rem;">Use your username or email to sign
+            in. This demo runs client-side validation and does not
             transmit credentials to any external service unless you change the form action to a real endpoint.</p>
-    <form id="loginForm" action="/login" method="POST" novalidate aria-describedby="loginHelper">
+        <form id="loginForm" action="/login" method="POST" novalidate aria-describedby="loginHelper">
             <label for="username">Username or email</label>
-            <input id="username" name="username" type="text" required aria-required="true" aria-label="Username or email" autocomplete="username"
-                placeholder="username or you@example.com">
+            <input id="username" name="username" type="text" required aria-required="true"
+                aria-label="Username or email" autocomplete="username" placeholder="username or you@example.com">
 
             <label for="password">Password</label>
-            <input id="password" name="password" type="password" required aria-required="true" aria-label="Password" autocomplete="current-password"
-                placeholder="Enter your password">
+            <input id="password" name="password" type="password" required aria-required="true" aria-label="Password"
+                autocomplete="current-password" placeholder="Enter your password">
 
             <button type="submit">Sign in securely</button>
 
@@ -143,9 +167,11 @@
 
             <div id="loginMessage" role="status" aria-live="polite"></div>
         </form>
-    <p style="font-size:0.85rem;color:#666;margin-top:10px;">We respect your privacy. This demo does not store or transmit credentials unless you change the form's
-        action to point to a real server endpoint (for example, <code>/login</code>), in which case you should ensure
-        secure transport (HTTPS) and a proper backend implementation.</p>
+        <p style="font-size:0.85rem;color:#666;margin-top:10px;">We respect your privacy. This demo does not store or
+            transmit credentials unless you change the form's
+            action to point to a real server endpoint (for example, <code>/login</code>), in which case you should
+            ensure
+            secure transport (HTTPS) and a proper backend implementation.</p>
     </section>
 
     <script>
@@ -197,7 +223,7 @@
         })();
 
     </script>
-    
+
 </body>
 
 </html>
