@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="A small accessible login component demo built with HTML, CSS and JavaScript.">
     <meta name="author" content="vmdivyareddy18">
+    <meta name="demo-version" content="1.0.0">
     <title>Login demo — Accessible</title>
     <!-- Tiny inline SVG favicon -->
     <link rel="icon"
@@ -89,7 +90,11 @@
         .login-container button:hover {
             background: var(--primary-dark);
         }
-    .login-container button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+        .login-container button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
 
         .login-container .form-row {
             display: flex;
@@ -149,7 +154,8 @@
     <section class="login-container" aria-labelledby="loginTitle">
         <h2 id="loginTitle">Sign in to your account <span class="sr-only">(use keyboard to navigate, all fields
                 required)</span></h2>
-    <p id="loginHelper" aria-live="polite" aria-atomic="true" style="margin:6px 0 12px 0;color:#555;font-size:0.95rem;">Use your username or email to sign
+        <p id="loginHelper" aria-live="polite" aria-atomic="true"
+            style="margin:6px 0 12px 0;color:#555;font-size:0.95rem;">Use your username or email to sign
             in. This demo runs client-side validation and does not
             transmit credentials to any external service unless you change the form action to a real endpoint.</p>
         <form id="loginForm" action="/login" method="POST" novalidate aria-describedby="loginHelper">
