@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="A small accessible login component demo built with HTML, CSS and JavaScript.">
     <meta name="author" content="vmdivyareddy18">
+    <meta name="keywords" content="login, demo, accessibility, html, css, javascript">
     <meta name="demo-version" content="1.0.0">
     <title>Login demo — Accessible</title>
     <!-- Tiny inline SVG favicon -->
@@ -90,7 +91,10 @@
         .login-container button:hover {
             background: var(--primary-dark);
         }
-    .login-container button:active { transform: translateY(1px); }
+
+        .login-container button:active {
+            transform: translateY(1px);
+        }
 
         .login-container button:disabled {
             opacity: 0.6;
@@ -139,7 +143,13 @@
             clip: rect(0, 0, 0, 0);
             border: 0;
         }
-    code { background: #f3f3f3; padding: 2px 4px; border-radius: 3px; font-family: monospace; }
+
+        code {
+            background: #f3f3f3;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
     </style>
 </head>
 
@@ -164,7 +174,8 @@
         <form id="loginForm" action="/login" method="POST" novalidate aria-describedby="loginHelper">
             <label for="username">Username or email</label>
             <input id="username" name="username" type="text" required aria-required="true"
-                aria-label="Username or email" title="Enter your username or email" autocomplete="username" placeholder="username or you@example.com">
+                aria-label="Username or email" title="Enter your username or email" autocomplete="username"
+                placeholder="username or you@example.com">
 
             <label for="password">Password</label>
             <input id="password" name="password" type="password" required aria-required="true" aria-label="Password"
@@ -173,8 +184,10 @@
             <button type="submit">Sign in securely</button>
 
             <div class="form-row">
-                <label style="font-size:0.9rem;"><input type="checkbox" id="remember" aria-label="Remember this device"> Remember this device</label>
-                <a class="forgot" href="#" title="Recover your password" aria-label="Forgot password" tabindex="0">Forgot?</a>
+                <label style="font-size:0.9rem;"><input type="checkbox" id="remember" aria-label="Remember this device">
+                    Remember this device</label>
+                <a class="forgot" href="#" title="Recover your password" aria-label="Forgot password"
+                    tabindex="0">Forgot?</a>
             </div>
 
             <div id="loginMessage" role="status" aria-live="polite"></div>
@@ -241,10 +254,11 @@
     </script>
 
 </body>
+
 </html>
 
-    <footer style="margin-top:24px;color:#888;font-size:0.85rem;">
-        © 2026 vmdivyareddy18 — demo login component
-    </footer>
+<footer style="margin-top:24px;color:#888;font-size:0.85rem;">
+    © 2026 vmdivyareddy18 — demo login component
+</footer>
 
 </html>
