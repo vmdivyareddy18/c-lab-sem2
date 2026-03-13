@@ -23,3 +23,5 @@ Notes
 License
 -------
 MIT
+
+See `CHANGES.md` for a short list of recent updates and accessibility improvements.
