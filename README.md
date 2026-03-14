@@ -17,4 +17,13 @@ Then visit http://localhost:8000/index1.html
 
 Notes
 -----
-- The form is configured with `action="/login"` (placeholder). The client-side script 
+- The form is configured with `action="/login"` (placeholder). The client-side script                           
+performs demo validation only and does not transmit credentials unless you set a real endpoint.
+- Accessibility improvements: ARIA attributes, screen-reader-only utility, input focus styles.
+
+License
+-------
+MIT
+
+See `CHANGES.md` for a short list of recent updates and accessibility improvements.
+<>
