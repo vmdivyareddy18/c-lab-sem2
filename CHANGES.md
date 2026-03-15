@@ -11,4 +11,6 @@ Recent updates
 
 - Added multiple ARIA improvements and keyboard affordances (labels, roles, focus behavior)
 
+- Fixed malformed trailing HTML and consolidated footer into the page body
+
 For full commit history, see `git log`.
