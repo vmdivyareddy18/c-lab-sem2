@@ -13,4 +13,6 @@ Recent updates
 
 - Fixed malformed trailing HTML and consolidated footer into the page body
 
+- Misc: updated labels, added console log, annotated demo version and README links
+
 For full commit history, see `git log`.
