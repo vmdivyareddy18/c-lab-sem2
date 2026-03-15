@@ -15,4 +15,3 @@ int main()
 
     return 0;
 }
-// This program finds the largest of three numbers entered by the user.
