@@ -159,7 +159,17 @@
             border-radius: 3px;
             font-family: monospace;
         }
-    .demo-badge { display:inline-block; margin-left:8px; padding:2px 6px; background: color-mix(in srgb, var(--muted) 4%, white); color: #b33; border-radius:4px; font-size:0.8rem; border:1px solid color-mix(in srgb, var(--muted) 8%, white); }
+
+        .demo-badge {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 2px 6px;
+            background: color-mix(in srgb, var(--muted) 4%, white);
+            color: #b33;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            border: 1px solid color-mix(in srgb, var(--muted) 8%, white);
+        }
     </style>
 </head>
 
@@ -177,8 +187,8 @@
 
     <!-- Login component -->
     <section class="login-container" aria-labelledby="loginTitle" aria-label="Login form" tabindex="0">
-    <h2 id="loginTitle">Sign in to your account <span class="sr-only">(use keyboard to navigate, all fields
-        required)</span> <span class="demo-badge" aria-hidden="true">DEMO</span></h2>
+        <h2 id="loginTitle">Sign in to your account <span class="sr-only">(use keyboard to navigate, all fields
+                required)</span> <span class="demo-badge" aria-hidden="true">DEMO</span></h2>
         <p id="loginHelper" aria-live="polite" aria-atomic="true"
             style="margin:6px 0 12px 0;color:#555;font-size:0.95rem;">Use your username or email to sign
             in. This demo runs client-side validation and does not
