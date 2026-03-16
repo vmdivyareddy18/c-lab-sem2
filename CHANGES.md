@@ -17,4 +17,6 @@ Recent updates
 
 - Added DEMO badge to the login heading and metadata tags for tracking
 
+- Bumped demo version to 1.0.2 and adjusted demo-badge styling to use CSS variables
+
 For full commit history, see `git log`.
