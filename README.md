@@ -28,3 +28,4 @@ MIT
 See `CHANGES.md` for a short list of recent updates and accessibility improvements.
 
 Note: The demo HTML was recently cleaned up for validity and accessibility; check `CHANGES.md` for details.
+The page now includes a small "DEMO" badge and a demo version meta tag for tracking.
