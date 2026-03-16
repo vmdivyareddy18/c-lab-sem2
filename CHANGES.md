@@ -15,4 +15,6 @@ Recent updates
 
 - Misc: updated labels, added console log, annotated demo version and README links
 
+- Added DEMO badge to the login heading and metadata tags for tracking
+
 For full commit history, see `git log`.
