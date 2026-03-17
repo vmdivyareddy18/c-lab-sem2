@@ -21,3 +21,9 @@ int main()
         break;
     }
 }
+{
+    if (flag)
+        printf("Prime Number");
+    else
+        printf("Not a Prime Number");
+}
