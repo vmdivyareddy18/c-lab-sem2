@@ -14,3 +14,10 @@ int main()
 
     for (i = 2
 };
+{
+    if (num % i == 0)
+    {
+        flag = 0;
+        break;
+    }
+}
