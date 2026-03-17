@@ -14,6 +14,3 @@ int main()
 
     for (i = 2
 };
-
-i <=
-    num / 2
