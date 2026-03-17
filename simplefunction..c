@@ -12,3 +12,6 @@ int main()
 {
     printf("Hello, Welcome to C Programming!");
 }
+{
+    printf("Hello, Welcome to C Programming!");
+}
