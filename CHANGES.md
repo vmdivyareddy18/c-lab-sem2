@@ -19,4 +19,5 @@ Recent updates
 
 - Bumped demo version to 1.0.2 and adjusted demo-badge styling to use CSS variables
 
+
 For full commit history, see `git log`.

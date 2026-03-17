@@ -31,3 +31,4 @@ else
     printf("Not a Prime Number");
 
 return 0;
+}
