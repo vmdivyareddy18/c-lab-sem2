@@ -27,3 +27,12 @@ int main()
     else
         printf("Not a Prime Number");
 }
+{
+    if (flag)
+        printf("Prime Number");
+    else
+        printf("Not a Prime Number");
+}
+{
+    return 0;
+}
