@@ -11,4 +11,4 @@ int main()
     greet(); // Function Call
     return 0;
 }
-1
+1 2
