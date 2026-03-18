@@ -27,13 +27,4 @@ int main()
 
         if (s[i].marks >= 90)
             printf("A\n");
-        else if (s[i].marks >= 75)
-            printf("B\n");
-        else if (s[i].marks >= 50)
-            printf("C\n");
-        else
-            printf("Fail\n");
-    }
-
-    return 0;
-}
+        else if (s[i
