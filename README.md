@@ -13,6 +13,8 @@ Open `index1.html` in your browser. For a minimal static server (recommended), r
 python3 -m http.server 8000
 ```
 
+Tip: Alternatively, run a minimal server with `python -m http.server` (Python 3).
+
 Then visit http://localhost:8000/index1.html
 
 Notes
@@ -29,3 +31,4 @@ See `CHANGES.md` for a short list of recent updates and accessibility improvemen
 
 Note: The demo HTML was recently cleaned up for validity and accessibility; check `CHANGES.md` for details.
 The page now includes a small "DEMO" badge and a demo version meta tag for tracking.
+Last updated: 17 March 2026
