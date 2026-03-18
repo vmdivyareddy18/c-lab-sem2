@@ -7,8 +7,8 @@
     <meta name="description" content="A small accessible login component demo built with HTML, CSS and JavaScript.">
     <meta name="author" content="vmdivyareddy18">
     <meta name="keywords" content="login, demo, accessibility, html, css, javascript">
-    <meta name="demo-version" content="1.0.2">
-    <title>Login demo — Accessible v1.0.2</title>
+    <meta name="demo-version" content="1.0.3">
+    <title>Login demo — Accessible v1.0.3</title>
     <meta name="generator" content="c-lab-sem2 script">
     <!-- Tiny inline SVG favicon -->
     <link rel="icon"
@@ -125,7 +125,7 @@
         a:focus,
         button:focus,
         input:focus {
-            outline: 3px solid rgba(0, 102, 204, 0.15);
+            outline: 3px solid color-mix(in srgb, var(--primary) 15%, white);
         }
 
         #loginMessage {
@@ -173,7 +173,7 @@
     </style>
 </head>
 
-<body data-demo-version="1.0.0" data-author="vmdivyareddy18">
+<body data-demo-version="1.0.3" data-author="vmdivyareddy18">
     <h1>Welcome to the Login Demo</h1>
     <p style="font-weight:700;color:#b33;">Demo — Not for production use</p>
     <p><a href="README.md">See README for run instructions</a></p>
@@ -203,12 +203,14 @@
             <input id="password" name="password" type="password" required aria-required="true" aria-label="Password"
                 autocomplete="current-password" placeholder="Enter your password (min 8 chars, demo)">
 
-            <button type="submit" aria-describedby="loginMessage">Sign in (demo)</button>
+            <button type="submit" aria-describedby="loginMessage">Sign in securely</button>
 
             <div class="form-row">
-                <label style="font-size:0.9rem;"><input type="checkbox" id="remember" aria-label="Remember this device"
-                        aria-pressed="false">
-                    Remember this device</label>
+                <label style="font-size:0.9rem;">
+                    <input type="checkbox" id="remember" aria-label="Remember this device" aria-checked="false">
+                    <span class="sr-only">Remember this device checkbox</span>
+                    Remember this device
+                </label>
                 <a class="forgot" href="#" title="Recover your password" aria-label="Forgot password"
                     tabindex="0">Forgot?</a>
             </div>
@@ -231,7 +233,7 @@
          * - Does NOT transmit credentials unless the form action is changed to a real endpoint
          */
         (function () {
-            console.log('Login demo v1.0.0 - demo by vmdivyareddy18');
+            console.log('Login demo v1.0.3 - demo by vmdivyareddy18');
             const form = document.getElementById('loginForm');
             const msg = document.getElementById('loginMessage');
             const usernameInput = document.getElementById('username');

@@ -9,7 +9,7 @@ How to run locally
 Open `index1.html` in your browser. For a minimal static server (recommended), run:
 
 ```bash
-# Python 3
+# Python 3: start a simple HTTP server on port 8000
 python3 -m http.server 8000
 ```
 
