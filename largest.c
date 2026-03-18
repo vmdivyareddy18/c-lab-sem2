@@ -8,4 +8,11 @@ int main()
     printf("Enter three numbers (separated by spaces) and press Enter:\n");
     scanf("%d %d %d", &a, &b, &c);
     if (a >= b && a >= c)
-        printf(
+        printf("Largest number is %d", a);
+    else if (b >= a && b >= c)
+        printf("Largest number is %d", b);
+    else
+        printf("Largest number is %d", c);
+
+    return 0;
+}
