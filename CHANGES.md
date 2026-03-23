@@ -21,5 +21,7 @@ Recent updates
 
 - Bumped demo version to 1.0.3 and updated console/title/body metadata to match
 
+- Updated demo metadata to 1.0.4 and documentation timestamps
+
 
 For full commit history, see `git log`.
