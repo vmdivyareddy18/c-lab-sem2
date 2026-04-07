@@ -20,23 +20,3 @@ body {
     color: var(--fg);
     display: flex;
     align-items: center;
-
-    justify-content: center main {
-        padding: 24px;
-        text-align: center
-    }
-
-    button {
-        background: var(--accent);
-        color: #df2d2d;
-        border: none;
-        padding: 10px 14px;
-        border-radius: 6px;
-        cursor: pointer
-    }
-
-    .dark {
-        --bg: #2bc6cb;
-        --fg: #1259cc;
-        --accent: #6aaef5
-    }
