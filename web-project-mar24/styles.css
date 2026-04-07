@@ -20,25 +20,3 @@ body {
     color: var(--fg);
     display: flex;
     align-items: center;
-    justify-content: center
-}
-
-main {
-    padding: 24px;
-    text-align: center
-}
-
-button {
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    padding: 10px 14px;
-    border-radius: 6px;
-    cursor: pointer
-}
-
-.dark {
-    --bg: #121212;
-    --fg: #d4ca3b;
-    --accent: #ffb974
-}
