@@ -9,12 +9,3 @@ int main()
 
     while (num != 0)
     {
-        rem = num % 10;
-        rev = rev * 10 + rem;
-        num /= 10;
-    }
-
-    printf("Reversed number: %d", rev);
-
-    return 0;
-}
