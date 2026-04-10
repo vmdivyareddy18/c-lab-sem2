@@ -239,11 +239,4 @@
             const usernameInput = document.getElementById('username');
 
             // Focus the username input on load to aid keyboard users
-            if (usernameInput) usernameInput.focus();
-
-            if (!form) return;
-
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                msg.textContent = '';
-                msg.className = '';
+            if (usernameInput
