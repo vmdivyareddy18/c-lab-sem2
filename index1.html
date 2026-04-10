@@ -247,12 +247,3 @@
                 e.preventDefault();
                 msg.textContent = '';
                 msg.className = '';
-
-                const username = form.username.value.trim();
-                const password = form.password.value.trim();
-
-                if (!username || !password) {
-                    msg.textContent = 'Please enter both username and password.';
-                    msg.classList.add('error');
-                    return;
-                }
