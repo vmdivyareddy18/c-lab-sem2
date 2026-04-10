@@ -256,15 +256,3 @@
                     msg.classList.add('error');
                     return;
                 }
-
-                // Demo validation: accept any non-empty credentials
-                const submitBtn = form.querySelector('button[type="submit"]');
-                submitBtn.disabled = true;
-                submitBtn.textContent = 'Processing...';
-
-                msg.textContent = 'Login successful (demo). Redirecting...';
-                msg.classList.add('success');
-
-                // Clear message after a short delay (demo) and restore button
-                setTimeout(() => {
-    
