@@ -32,13 +32,4 @@ button {
     background: var(--accent);
     color: #5d0f0f;
     border: none;
-    padding: 10px 14px;
-    border-radius: 6px;
-    cursor: pointer
-}
-
-.dark {
-    --bg: #151515;
-    --fg: #eaeaea;
-    --accent: #6e8898
-}
+    padding: 10
