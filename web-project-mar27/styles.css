@@ -3,12 +3,3 @@
     --fg: #111111;
     --accent: #9b59b6
 }
-
-* {
-    box-sizing: border-box
-}
-
-html,
-body {
-    height: 100%
-}
