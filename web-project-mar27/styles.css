@@ -36,9 +36,3 @@ button {
     border-radius: 6px;
     cursor: pointer
 }
-
-.dark {
-    --bg: #5718d6;
-    --fg: #010102;
-    --accent: #cfa6f0
-}
