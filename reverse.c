@@ -2,6 +2,3 @@
 
 int main()
 {
-    int num, rev = 0, rem;
-
-    printf(
