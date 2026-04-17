@@ -6,8 +6,4 @@ int main()
 
     printf("Enter a number: ");
     scanf("%d", &num);
-
-    if (num % 2 == 0)
-        printf("The number is Even");
-    else
 }
