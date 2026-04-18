@@ -1,7 +1,1 @@
-Changelog
-=========
-
-Recent updates
---------------
-
 - Auto
