@@ -11,8 +11,4 @@ Recent updates
 
 - Added multiple ARIA improvements and keyboard affordances (labels, roles, focus behavior)
 
-- Fixed malformed trailing HTML and consolidated footer into the page body
-
-- Misc: updated labels, added console log, annotated demo version and README links
-
-- Added DEMO badge to the login h
+- Fixed malformed trailing HTML and con
