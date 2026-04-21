@@ -28,17 +28,7 @@ main {
     text-align: center
 }
 
-button {
-    background: var(--accent);
-    color: #2887a7;
-    border: none;
-    padding: 10px 14px;
-    border-radius: 6px;
-    cursor: pointer
-}
-
-.dark {
-    --bg: #0b0b0b;
-    --fg: #d01c76;
-    --accent: #5ff2c6
+g: #0b0b0b;
+--fg: #d01c76;
+--accent: #5ff2c6
 }
