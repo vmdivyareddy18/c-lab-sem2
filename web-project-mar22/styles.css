@@ -17,8 +17,3 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
     background: var(--bg);
-    color: var(--fg);
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
