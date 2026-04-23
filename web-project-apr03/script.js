@@ -1,8 +1,5 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('toggle');
-  btn.addEventListener('click', ()=>{
+  btn.addEventListener('click', () => {
     document.documentElement.classList.toggle('dark');
-    console.log('Toggled theme (Apr 03 project).');
-  });
-  console.log('Web Combo Project (Apr 03) loaded.');
-});
+    console.log('T
