@@ -1,7 +1,27 @@
-:root{ --bg:#ffffff; --fg:#1a1a1a; --accent:#2980b9 }
-*{box-sizing:border-box}
-html,body{height:100%}
-body{margin:0;font-family:system-ui, -apple-system, 'Segoe UI', Roboto, Arial;background:var(--bg);color:var(--fg);display:flex;align-items:center;justify-content:center}
-main{padding:24px;text-align:center}
-button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:6px;cursor:pointer}
-.dark{ --bg:#08101a; --fg:#eaf2fb; --accent:#5fb6ff }
+:root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --accent: #2980b9
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    background: var(--bg);
+    color: var(--fg);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+main {
+    padding:
