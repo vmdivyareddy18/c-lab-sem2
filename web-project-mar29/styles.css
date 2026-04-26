@@ -15,30 +15,23 @@ body {
 
 body {
     margin: 0;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-    background: var(--bg);
-    color: var(--fg);
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
 
-main {
-    padding: 24px;
-    text-align: center
-}
+    font-family main {
+        padding: 24px;
+        text-align: center
+    }
 
-button {
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    padding: 10px 14px;
-    border-radius: 6px;
-    cursor: pointer
-}
+    button {
+        background: var(--accent);
+        color: #fff;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 6px;
+        cursor: pointer
+    }
 
-.dark {
-    --bg: #0b0b0b;
-    --fg: #dca547;
-    --accent: #ffd27b
-}
+    .dark {
+        --bg: #0b0b0b;
+        --fg: #dca547;
+        --accent: #ffd27b
+    }
