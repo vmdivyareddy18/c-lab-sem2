@@ -29,9 +29,3 @@ body {
         border-radius: 6px;
         cursor: pointer
     }
-
-    .dark {
-        --bg: #0b0b0b;
-        --fg: #dca547;
-        --accent: #ffd27b
-    }
