@@ -8,3 +8,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     btn.style.transform = `scale(${1+count*0.02})`
   })
 })
+// script note 4
