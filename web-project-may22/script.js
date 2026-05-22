@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded',()=>{
   inc.addEventListener('click',()=>{ n++; status.textContent = `Count: ${n}` })
   reset.addEventListener('click',()=>{ n=0; status.textContent = 'Reset to 0' })
 })
+// script note 4
