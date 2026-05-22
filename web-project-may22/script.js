@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded',()=>{
   reset.addEventListener('click',()=>{ n=0; status.textContent = 'Reset to 0' })
 })
 // script note 4
+// script note 7
