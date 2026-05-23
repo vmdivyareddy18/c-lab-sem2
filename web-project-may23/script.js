@@ -8,3 +8,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     document.body.style.background = on ? '#e8fff5' : ''
   })
 })
+// script note 4
