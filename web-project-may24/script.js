@@ -6,3 +6,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     status.textContent = input.value || 'Nothing to show'
   })
 })
+// script note 4
