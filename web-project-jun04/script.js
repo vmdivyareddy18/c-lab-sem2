@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
         status.textContent = `Triggered ${k} time${k > 1 ? 's' : ''}`
     })
 })
+// script note 4
