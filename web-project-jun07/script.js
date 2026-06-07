@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     status.textContent = `Pressed ${clicks} time${clicks>1?'s':''}`
   })
 })
+// script note 4
