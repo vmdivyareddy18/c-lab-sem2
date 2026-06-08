@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     status.textContent = `Goed ${c} time${c>1?'s':''}`
   })
 })
+// script note 4
