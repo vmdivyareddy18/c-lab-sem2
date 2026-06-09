@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded',()=>{
     status.textContent = `Done ${n} time${n>1?'s':''}`
   })
 })
+// script note 4
