@@ -1,7 +1,7 @@
 :root {
-    --bg: #fffef8;
-    --fg: #052029;
-    --accent: #0b8f6b
+    --bg: #fbfeff;
+    --fg: #061827;
+    --accent: #2563eb
 }
 
 * {
@@ -24,7 +24,7 @@ main {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 8px 24px rgba(2, 6, 23, 0.06);
-    max-width: 460px;
+    max-width: 480px;
     width: 100%;
     text-align: center
 }
