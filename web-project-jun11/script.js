@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded',function(){
     status.textContent = `Button clicked ${clicks} time${clicks===1? '':'s'}.`;
   });
 });
+// script note 4
