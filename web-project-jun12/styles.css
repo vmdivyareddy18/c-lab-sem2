@@ -5,3 +5,4 @@ main{background:var(--card);padding:22px;border-radius:10px;box-shadow:0 8px 28p
 h1{margin:0 0 8px;font-size:20px;color:#0b1220}
 p{margin:0 0 16px;color:#334155}
 button{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+/* style note 3 */
