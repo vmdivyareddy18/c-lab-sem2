@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
     status.textContent = `Pressed ${n} time${n===1? '':'s'}`;
   });
 });
+// script note 4
