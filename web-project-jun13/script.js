@@ -7,3 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
     status.textContent = `Tapped ${count} time${count === 1 ? '' : 's'}`;
   });
 });
+// script note 4
