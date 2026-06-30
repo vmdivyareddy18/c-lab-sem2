@@ -27,12 +27,3 @@ main {
   padding: 24px;
   text-align: center
 }
-
-button {
-  background: var(--accent);
-  color: #d31717;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-}
