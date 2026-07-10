@@ -20,3 +20,4 @@ function handleFeatureClick(e) {
 // navbar styles
 // footer section
 // footer styles
+// responsive layout
