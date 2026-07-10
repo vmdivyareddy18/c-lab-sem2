@@ -17,3 +17,4 @@ function handleFeatureClick(e) {
     e.target.classList.toggle('active');
 }
 // navbar section
+// navbar styles
