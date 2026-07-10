@@ -12,3 +12,7 @@ function initFeatures() {
         feature.addEventListener('click', handleFeatureClick);
     });
 }
+
+function handleFeatureClick(e) {
+    e.target.classList.toggle('active');
+}
