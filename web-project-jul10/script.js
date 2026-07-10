@@ -5,3 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function loadFeatures() {
     console.log('Loading features...');
 }
+
+function initFeatures() {
+    const features = document.querySelectorAll('.feature');
+    features.forEach(feature => {
+        feature.addEventListener('click', handleFeatureClick);
+    });
+}
