@@ -19,3 +19,4 @@ function handleFeatureClick(e) {
 // navbar section
 // navbar styles
 // footer section
+// footer styles
