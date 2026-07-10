@@ -21,3 +21,4 @@ function handleFeatureClick(e) {
 // footer section
 // footer styles
 // responsive layout
+// window event
