@@ -26,8 +26,3 @@ body {
 main {
     padding: 24px;
     text-align: center
-}
-
-button {
-    background: var(--accent);
-    color: hsl(0, 84%, 44%);
